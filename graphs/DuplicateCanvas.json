@@ -2,7 +2,8 @@
     "properties": {
         "name": "DuplicateCanvas",
         "environment": {
-            "type": "noflo-browser"
+            "type": "noflo-browser",
+            "content": ""
         }
     },
     "inports": {
@@ -11,7 +12,9 @@
             "port": "in",
             "metadata": {
                 "x": 0,
-                "y": 36
+                "y": 36,
+                "width": 72,
+                "height": 72
             }
         }
     },
@@ -21,7 +24,9 @@
             "port": "canvas",
             "metadata": {
                 "x": 828,
-                "y": 72
+                "y": 72,
+                "width": 72,
+                "height": 72
             }
         }
     },
@@ -54,7 +59,9 @@
             "metadata": {
                 "label": "CreateCanvas",
                 "x": 396,
-                "y": 252
+                "y": 252,
+                "width": 72,
+                "height": 72
             }
         },
         "DrawImage": {
@@ -62,7 +69,9 @@
             "metadata": {
                 "label": "DrawImage",
                 "x": 576,
-                "y": 72
+                "y": 72,
+                "width": 72,
+                "height": 72
             }
         },
         "Draw": {
@@ -70,7 +79,9 @@
             "metadata": {
                 "label": "Draw",
                 "x": 684,
-                "y": 72
+                "y": 72,
+                "width": 72,
+                "height": 72
             }
         },
         "core/Repeat_wuue3": {
@@ -78,7 +89,9 @@
             "metadata": {
                 "label": "core/Repeat",
                 "x": 144,
-                "y": 36
+                "y": 36,
+                "width": 72,
+                "height": 72
             }
         },
         "getHeight": {
@@ -86,7 +99,9 @@
             "metadata": {
                 "label": "getHeight",
                 "x": 288,
-                "y": 252
+                "y": 252,
+                "width": 72,
+                "height": 72
             }
         },
         "getWidth": {
@@ -94,7 +109,9 @@
             "metadata": {
                 "label": "getWidth",
                 "x": 288,
-                "y": 144
+                "y": 144,
+                "width": 72,
+                "height": 72
             }
         }
     },
@@ -107,8 +124,7 @@
             "tgt": {
                 "process": "getWidth",
                 "port": "element"
-            },
-            "metadata": {}
+            }
         },
         {
             "src": {
@@ -131,8 +147,7 @@
             "tgt": {
                 "process": "CreateCanvas",
                 "port": "width"
-            },
-            "metadata": {}
+            }
         },
         {
             "src": {
@@ -142,8 +157,7 @@
             "tgt": {
                 "process": "CreateCanvas",
                 "port": "height"
-            },
-            "metadata": {}
+            }
         },
         {
             "src": {
@@ -153,8 +167,7 @@
             "tgt": {
                 "process": "Draw",
                 "port": "commands"
-            },
-            "metadata": {}
+            }
         },
         {
             "src": {
@@ -164,8 +177,7 @@
             "tgt": {
                 "process": "Draw",
                 "port": "canvas"
-            },
-            "metadata": {}
+            }
         },
         {
             "src": {
