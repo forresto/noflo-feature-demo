@@ -1,9 +1,8 @@
 {
     "properties": {
-        "name": "feature-demo",
+        "name": "feature demo",
         "environment": {
-            "type": "noflo-browser",
-            "content": ""
+            "type": "noflo-browser"
         }
     },
     "inports": {},
@@ -229,7 +228,8 @@
             "tgt": {
                 "process": "dom/AppendChild_rsqi3",
                 "port": "parent"
-            }
+            },
+            "metadata": {}
         },
         {
             "src": {
@@ -278,7 +278,8 @@
             "tgt": {
                 "process": "face",
                 "port": "items"
-            }
+            },
+            "metadata": {}
         },
         {
             "src": {
@@ -301,7 +302,8 @@
             "tgt": {
                 "process": "core/Output_oybs8",
                 "port": "in"
-            }
+            },
+            "metadata": {}
         },
         {
             "src": {
@@ -324,7 +326,8 @@
             "tgt": {
                 "process": "features",
                 "port": "items"
-            }
+            },
+            "metadata": {}
         },
         {
             "src": {
@@ -334,7 +337,8 @@
             "tgt": {
                 "process": "core/Output_oybs8",
                 "port": "in"
-            }
+            },
+            "metadata": {}
         },
         {
             "src": {
@@ -344,7 +348,8 @@
             "tgt": {
                 "process": "core/Output_oybs8",
                 "port": "in"
-            }
+            },
+            "metadata": {}
         },
         {
             "src": {
@@ -380,7 +385,8 @@
             "tgt": {
                 "process": "triangles",
                 "port": "items"
-            }
+            },
+            "metadata": {}
         },
         {
             "src": {
@@ -397,62 +403,14 @@
         },
         {
             "src": {
-                "process": "canvas/DrawImage_q7oxm",
-                "port": "drawimage"
-            },
-            "tgt": {
-                "process": "canvas/Draw_447ix",
-                "port": "commands"
-            }
-        },
-        {
-            "src": {
-                "process": "triangles",
-                "port": "stroke"
-            },
-            "tgt": {
-                "process": "canvas/Draw_447ix",
-                "port": "commands"
-            },
-            "metadata": {
-                "route": null
-            }
-        },
-        {
-            "src": {
-                "process": "features",
-                "port": "fill"
-            },
-            "tgt": {
-                "process": "canvas/Draw_447ix",
-                "port": "commands"
-            },
-            "metadata": {
-                "route": null
-            }
-        },
-        {
-            "src": {
-                "process": "face",
-                "port": "stroke"
-            },
-            "tgt": {
-                "process": "canvas/Draw_447ix",
-                "port": "commands"
-            },
-            "metadata": {
-                "route": null
-            }
-        },
-        {
-            "src": {
                 "process": "DuplicateCanvas",
                 "port": "dupe_canvas"
             },
             "tgt": {
                 "process": "dom/AppendChild_rsqi3",
                 "port": "child"
-            }
+            },
+            "metadata": {}
         },
         {
             "src": {
@@ -501,6 +459,44 @@
             "tgt": {
                 "process": "canvas/Draw_447ix",
                 "port": "tick"
+            },
+            "metadata": {}
+        },
+        {
+            "src": {
+                "process": "canvas/DrawImage_q7oxm",
+                "port": "drawimage"
+            },
+            "tgt": {
+                "process": "canvas/Draw_447ix",
+                "port": "commands"
+            },
+            "metadata": {}
+        },
+        {
+            "src": {
+                "process": "features",
+                "port": "fill"
+            },
+            "tgt": {
+                "process": "canvas/Draw_447ix",
+                "port": "commands"
+            },
+            "metadata": {
+                "route": null
+            }
+        },
+        {
+            "src": {
+                "process": "triangles",
+                "port": "stroke"
+            },
+            "tgt": {
+                "process": "canvas/Draw_447ix",
+                "port": "commands"
+            },
+            "metadata": {
+                "route": null
             }
         },
         {
@@ -601,7 +597,7 @@
             }
         },
         {
-            "data": "http://i.imgur.com/ltPLW98.jpg",
+            "data": "http://i.meemoo.me/v1/in/giDEsOQTOA8iLCLnemjA_Conchita-Wurst-host-eurovision.jpg",
             "tgt": {
                 "process": "image/UrlToCanvas_gzawh",
                 "port": "url"
